@@ -39,7 +39,7 @@
       <input matInput formControlName="confirmPassword"  [type]="confirmhide ? 'password' : 'text'" />
       <button mat-icon-button matSuffix (click)="confirmhide = !confirmhide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="confirmhide">
         <mat-icon>{{confirmhide ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
+      </button>     
       <mat-error *ngIf="controls['confirmPassword']?.errors?.['required']">
         Confirm Password is required
       </mat-error>
